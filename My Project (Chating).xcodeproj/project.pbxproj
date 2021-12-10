@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A5A45150C2342D51079AED9 /* Pods_My_Project__Chating_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40339E25DFCF95C0833033E /* Pods_My_Project__Chating_.framework */; };
 		A805AA88275D7D080031AD83 /* InChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A805AA87275D7D080031AD83 /* InChat.swift */; };
 		A805AA8C275D9F740031AD83 /* ChatDataleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A805AA8B275D9F740031AD83 /* ChatDataleVC.swift */; };
 		A80D210E276042CA00733860 /* chatDelat&editeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D210D276042CA00733860 /* chatDelat&editeVC.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A226680F761CA9BF4F9E56CF /* Pods-My Project (Chating).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Project (Chating).release.xcconfig"; path = "Target Support Files/Pods-My Project (Chating)/Pods-My Project (Chating).release.xcconfig"; sourceTree = "<group>"; };
 		A805AA87275D7D080031AD83 /* InChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InChat.swift; sourceTree = "<group>"; };
 		A805AA8B275D9F740031AD83 /* ChatDataleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDataleVC.swift; sourceTree = "<group>"; };
 		A80D210D276042CA00733860 /* chatDelat&editeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "chatDelat&editeVC.swift"; sourceTree = "<group>"; };
@@ -42,6 +44,8 @@
 		A863EC8E275C98A000C9479F /* Chatss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chatss.swift; sourceTree = "<group>"; };
 		A89BAC192761634200192405 /* ChatData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChatData.xcdatamodel; sourceTree = "<group>"; };
 		A8BA14E62763DF3B00A72739 /* ChatDataMin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChatDataMin.xcdatamodel; sourceTree = "<group>"; };
+		D40339E25DFCF95C0833033E /* Pods_My_Project__Chating_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Project__Chating_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD67353D2C47038D5BEB975F /* Pods-My Project (Chating).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Project (Chating).debug.xcconfig"; path = "Target Support Files/Pods-My Project (Chating)/Pods-My Project (Chating).debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +53,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A5A45150C2342D51079AED9 /* Pods_My_Project__Chating_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C02951DA32DDAE32260F76F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D40339E25DFCF95C0833033E /* Pods_My_Project__Chating_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E22C595022FC1CF43DB119D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD67353D2C47038D5BEB975F /* Pods-My Project (Chating).debug.xcconfig */,
+				A226680F761CA9BF4F9E56CF /* Pods-My Project (Chating).release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A863EC6A275C7FE200C9479F = {
 			isa = PBXGroup;
 			children = (
 				A863EC75275C7FE200C9479F /* My Project (Chating) */,
 				A863EC74275C7FE200C9479F /* Products */,
+				3E22C595022FC1CF43DB119D /* Pods */,
+				3C02951DA32DDAE32260F76F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A863EC87275C7FE300C9479F /* Build configuration list for PBXNativeTarget "My Project (Chating)" */;
 			buildPhases = (
+				AA81ACA507EEF52D05F1A1F7 /* [CP] Check Pods Manifest.lock */,
 				A863EC6F275C7FE200C9479F /* Sources */,
 				A863EC70275C7FE200C9479F /* Frameworks */,
 				A863EC71275C7FE200C9479F /* Resources */,
+				CC6BCCE04DC5F73DB56A0BEC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,6 +186,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AA81ACA507EEF52D05F1A1F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-My Project (Chating)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC6BCCE04DC5F73DB56A0BEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My Project (Chating)/Pods-My Project (Chating)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My Project (Chating)/Pods-My Project (Chating)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-My Project (Chating)/Pods-My Project (Chating)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A863EC6F275C7FE200C9479F /* Sources */ = {
@@ -320,6 +389,7 @@
 		};
 		A863EC88275C7FE300C9479F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD67353D2C47038D5BEB975F /* Pods-My Project (Chating).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -348,6 +418,7 @@
 		};
 		A863EC89275C7FE300C9479F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A226680F761CA9BF4F9E56CF /* Pods-My Project (Chating).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

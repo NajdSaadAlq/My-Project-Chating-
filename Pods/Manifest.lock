@@ -1,0 +1,26 @@
+PODS:
+  - CleanyModal (1.0.3)
+  - InputBarAccessoryView (5.4.0):
+    - InputBarAccessoryView/Core (= 5.4.0)
+  - InputBarAccessoryView/Core (5.4.0)
+  - MessageKit (3.7.0):
+    - InputBarAccessoryView (~> 5.4.0)
+
+DEPENDENCIES:
+  - CleanyModal
+  - MessageKit
+
+SPEC REPOS:
+  trunk:
+    - CleanyModal
+    - InputBarAccessoryView
+    - MessageKit
+
+SPEC CHECKSUMS:
+  CleanyModal: 5e5fece5b1de97b47ea091f6390ec2b16bfa2f20
+  InputBarAccessoryView: 74d471ab1fa1736806be50328df79257e52865a9
+  MessageKit: 8e76dd8d65ad44b49e1651c673497146416461e9
+
+PODFILE CHECKSUM: 9b89ae4c3aa41258d22f1b0f20b663b2aed2a134
+
+COCOAPODS: 1.11.2

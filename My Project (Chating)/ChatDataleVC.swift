@@ -14,6 +14,7 @@ class ChatDataleVC: UIViewController{
     var edit: Chatss!
     var indxe: Int!
     
+    @IBOutlet weak var cellNumberLab: UILabel!
     @IBOutlet weak var cellLabel3: UILabel!
     @IBOutlet weak var cellLabel2: UILabel!
     @IBOutlet weak var cellLabel: UILabel!
@@ -66,6 +67,7 @@ func setupUI()
 {
     chatTitelButton.setTitle(chat.title, for: .normal)
     chatTitelButton.titleLabel?.text = chat.title
+    cellNumberLab.text = chat.mobileNum
     cellLabel3.text = chat.detailsG
     cellImageView.image = chat.image
     cellImageView2.image = chat.image

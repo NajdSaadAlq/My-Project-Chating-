@@ -12,6 +12,7 @@ class EditeChatInf: UIViewController {
     var chat: Chatss!
     var edit: Chatss!
     var indxe: Int!
+    @IBOutlet weak var editeNumberLabel: UILabel!
     @IBOutlet weak var editeImageView: UIImageView!
     @IBOutlet weak var editeTitilLabel: UILabel!
    
@@ -38,6 +39,8 @@ class EditeChatInf: UIViewController {
         
         editeTitilLabel.text = chat.title
        // editeTitilLabel.text = edit.title
+        editeNumberLabel.text = chat.mobileNum
+        
         editeImageView.image = chat.image
       //  editeImageView.image = edit.image
         editeImageView.layer.cornerRadius = editeImageView.frame.width/2

@@ -11,8 +11,8 @@ import UIKit
 struct Chatss{
     
     var title: String
+    var mobileNum: String
     var image: UIImage? = nil
     var detailsG: String? = nil
-    var timeG: String? = nil
-    var reactionG: Int? = nil
+    
 }

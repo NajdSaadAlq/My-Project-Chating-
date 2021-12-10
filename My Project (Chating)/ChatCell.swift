@@ -9,6 +9,7 @@ import UIKit
 
 class ChatCell: UITableViewCell {
     
+    @IBOutlet weak var chatNumberLabel: UILabel!
     @IBOutlet weak var chatTitleLabel: UILabel!
     @IBOutlet weak var chatReactionTitleLabel: UILabel!
     @IBOutlet weak var chatImageView: UIImageView!

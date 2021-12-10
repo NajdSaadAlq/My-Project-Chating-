@@ -14,6 +14,7 @@ class CreateChat: UIViewController {
     var editedChatIndex: Int?
     var indxe: Int!
    
+    @IBOutlet weak var mobileTextField: UITextField!
     @IBOutlet weak var imageChat: UIImageView!
     @IBOutlet weak var detailsTextView: UITextField!
     @IBOutlet weak var titleTextField: UITextField!
@@ -27,9 +28,10 @@ class CreateChat: UIViewController {
 //            navigationItem.title = "Edit Content"
             if let chat = editedChat{
                 titleTextField.text = chat.title
+                mobileTextField.text = chat.mobileNum
                 detailsTextView.text = chat.detailsG
                 imageChat.image = chat.image
-            
+           //     mobileTextField.text = chat.mobileNum
         }
         
         
@@ -46,7 +48,7 @@ class CreateChat: UIViewController {
     }
     @IBAction func addBarButtonClicked(_ sender: Any) {
         
-            let chatNew = Chatss(title: titleTextField.text! , image: imageChat.image, detailsG: detailsTextView.text!)
+        let chatNew = Chatss(title: titleTextField.text!, mobileNum: mobileTextField.text! , image: imageChat.image, detailsG: detailsTextView.text!)
         
         NotificationCenter.default.post(name: Notification.Name("NewChhatAdded"), object: nil,userInfo: ["addedChat":chatNew])
             ///
@@ -54,6 +56,7 @@ class CreateChat: UIViewController {
             let alert = UIAlertController(title: "تمت الاضافة", message: "تم إضافة جهة الاتصال ", preferredStyle: .alert)
             let closeAction = UIAlertAction(title: "تم", style: .default) { _ in self.tabBarController?.selectedIndex = 0
                 self.titleTextField.text = ""
+                self.mobileTextField.text = ""
                 self.detailsTextView.text = ""
                 self.imageChat.image = nil
             }

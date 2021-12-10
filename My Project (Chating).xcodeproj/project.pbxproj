@@ -21,6 +21,7 @@
 		A863EC8D275C948300C9479F /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A863EC8C275C948300C9479F /* ChatCell.swift */; };
 		A863EC8F275C98A000C9479F /* Chatss.swift in Sources */ = {isa = PBXBuildFile; fileRef = A863EC8E275C98A000C9479F /* Chatss.swift */; };
 		A89BAC1A2761634200192405 /* ChatData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A89BAC182761634200192405 /* ChatData.xcdatamodeld */; };
+		A8BA14E72763DF3B00A72739 /* ChatDataMin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8BA14E52763DF3B00A72739 /* ChatDataMin.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		A863EC8C275C948300C9479F /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		A863EC8E275C98A000C9479F /* Chatss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chatss.swift; sourceTree = "<group>"; };
 		A89BAC192761634200192405 /* ChatData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChatData.xcdatamodel; sourceTree = "<group>"; };
+		A8BA14E62763DF3B00A72739 /* ChatDataMin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChatDataMin.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				A863EC81275C7FE300C9479F /* LaunchScreen.storyboard */,
 				A863EC84275C7FE300C9479F /* Info.plist */,
 				A89BAC182761634200192405 /* ChatData.xcdatamodeld */,
+				A8BA14E52763DF3B00A72739 /* ChatDataMin.xcdatamodeld */,
 			);
 			path = "My Project (Chating)";
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				A863EC77275C7FE200C9479F /* AppDelegate.swift in Sources */,
 				A863EC8F275C98A000C9479F /* Chatss.swift in Sources */,
 				A81C7FDA275D54190009700D /* EditeChatInf.swift in Sources */,
+				A8BA14E72763DF3B00A72739 /* ChatDataMin.xcdatamodeld in Sources */,
 				A805AA88275D7D080031AD83 /* InChat.swift in Sources */,
 				A839786E275CF27D0018C4AC /* CreateChat.swift in Sources */,
 				A89BAC1A2761634200192405 /* ChatData.xcdatamodeld in Sources */,
@@ -401,6 +405,16 @@
 			);
 			currentVersion = A89BAC192761634200192405 /* ChatData.xcdatamodel */;
 			path = ChatData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		A8BA14E52763DF3B00A72739 /* ChatDataMin.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A8BA14E62763DF3B00A72739 /* ChatDataMin.xcdatamodel */,
+			);
+			currentVersion = A8BA14E62763DF3B00A72739 /* ChatDataMin.xcdatamodel */;
+			path = ChatDataMin.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

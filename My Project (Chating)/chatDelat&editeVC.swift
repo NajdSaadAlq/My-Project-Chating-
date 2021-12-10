@@ -17,6 +17,7 @@ class chatDelat_editeVC: UIViewController {
     
 //MARK:
     
+    @IBOutlet weak var chatNumberTextField: UITextField!
     @IBOutlet weak var editButon: UIButton!
     @IBOutlet weak var deleteButon: UIButton!
     @IBOutlet weak var ChingTitelTextField: UITextField!
@@ -27,6 +28,7 @@ class chatDelat_editeVC: UIViewController {
 
         if let chat = editedChat{
             ChingTitelTextField.text = chat.title
+            chatNumberTextField.text = chat.mobileNum
             chatImageView.image = chat.image
             chatImageView.layer.cornerRadius = chatImageView.frame.width/2
     }
@@ -41,12 +43,13 @@ class chatDelat_editeVC: UIViewController {
         
     }
     @IBAction func editButonAct(_ sender: Any) {
-        let chatNew = Chatss(title: ChingTitelTextField.text! , image: chatImageView.image)
+        let chatNew = Chatss(title: ChingTitelTextField.text!, mobileNum: chatNumberTextField.text! , image: chatImageView.image)
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "CurrentChatEdited") , object: nil,userInfo: ["editedChat":chatNew,"editedChatIndex": editedChatIndex! ])
         
         let alert = UIAlertController(title: "تم التعديل ", message: "لقد تم تعديل البيانات", preferredStyle: .alert)
         let closeAction = UIAlertAction(title: "تم", style: .default) { _ in self.navigationController?.popViewController(animated: true)
             self.ChingTitelTextField.text = ""
+            self.chatNumberTextField.text = ""
             self.chatImageView.image = nil
         }
         alert.addAction(closeAction)

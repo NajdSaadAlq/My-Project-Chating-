@@ -11,15 +11,7 @@ import CoreData
 class ChatVC: UIViewController {
     
     var chatAarray:[Chatss] = [
-        Chatss(title: "Swift Grobe - طويق 1000 عن بعد",image: UIImage(named: "swift"),detailsG: " 😦 متى  الاختبار" ,timeG: "10:22 PM" ),
-        
-        Chatss(title: "JavaScript Grobe ",image: #imageLiteral(resourceName: "JS") ,detailsG: "بداء البث للكلاس 😌" , timeG: "3:00 PM"),
-        
-        Chatss(title: "Python مجتمع",image: #imageLiteral(resourceName: "python") ,detailsG: "خذيت فل مارك في الاختبار اليوم 💃🏻💃🏻💃🏻" , timeG: "6:56 PM"),
-        
-        Chatss(title: "NOG Nintendo switch",image: #imageLiteral(resourceName: "Nintendo") ,detailsG: "نزل تحديث جديد في نظام النتندو سويتش لا يفوتكم 🎮 🤩", timeG: "10:00 AM"),
-        
-        Chatss(title: "Telegram",detailsG: "اهلين 😇", timeG: "12:00 AM")
+
     ]
     
     
@@ -93,6 +85,8 @@ class ChatVC: UIViewController {
         
         let chatObject = NSManagedObject.init(entity: chatEntity, insertInto: manageContext)
         chatObject.setValue(chat.title, forKey: "title")
+        //number
+        chatObject.setValue(chat.mobileNum, forKey: "mobileNum")
       //  chatObject.setValue(chat.detailsG, forKey: "detailsG")
         chatObject.setValue(chat.detailsG, forKey: "detailsG")
         if let image = chat.image {
@@ -115,10 +109,13 @@ class ChatVC: UIViewController {
         guard let appdelegte = UIApplication.shared.delegate as? AppDelegate else {return}
          let context = appdelegte.persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Chat")
+        
         do{
         let result = try context.fetch(fetchRequest) as!  [NSManagedObject]
             
             result[index].setValue(chat.title, forKey: "title")
+            result[index].setValue(chat.mobileNum, forKey: "mobileNum")
+            
             if let image = chat.image {
                             //image.pngData()   the two shosess
                 let imageData = image.jpegData(compressionQuality: 1)
@@ -160,11 +157,12 @@ func getchats() -> [Chatss] {
         for manageChat in result {
             let title = manageChat.value(forKey: "title") as! String
             let detailsG = manageChat.value(forKey: "detailsG") as? String
+            let mobileNum = manageChat.value(forKey: "mobileNum") as! String
             var transformValues :UIImage? = nil
             if let imgFromContext = manageChat.value(forKey: "image") as? Data {
                 transformValues = UIImage(data: imgFromContext)
             }
-            let chat = Chatss(title: title , image: transformValues, detailsG: detailsG , timeG: nil, reactionG: nil)
+            let chat = Chatss(title: title, mobileNum: mobileNum , image: transformValues, detailsG: detailsG )
             chats.append(chat)
         }
             print("========== success =============")
@@ -196,8 +194,9 @@ extension ChatVC: UITableViewDataSource , UITableViewDelegate {
         
 
         cell.chatTitleLabel.text = chatAarray[indexPath.row].title
+        cell.chatNumberLabel.text = chatAarray[indexPath.row].mobileNum
         cell.chatReactionTitleLabel.text = chatAarray[indexPath.row].detailsG
-        cell.chatRectionTimeLabel.text = chatAarray[indexPath.row].timeG
+
     
         if chatAarray[indexPath.row].image != nil{
             cell.chatImageView.image = chatAarray[indexPath.row].image

@@ -12,13 +12,13 @@ class ChatVC: UIViewController {
     
     var chatAarray:[Chatss] = [
         Chatss(title: "Swift Grobe - طويق 1000 عن بعد",image: UIImage(named: "swift"),detailsG: " 😦 متى  الاختبار" ,timeG: "10:22 PM" ),
-
+        
         Chatss(title: "JavaScript Grobe ",image: #imageLiteral(resourceName: "JS") ,detailsG: "بداء البث للكلاس 😌" , timeG: "3:00 PM"),
-
+        
         Chatss(title: "Python مجتمع",image: #imageLiteral(resourceName: "python") ,detailsG: "خذيت فل مارك في الاختبار اليوم 💃🏻💃🏻💃🏻" , timeG: "6:56 PM"),
-
+        
         Chatss(title: "NOG Nintendo switch",image: #imageLiteral(resourceName: "Nintendo") ,detailsG: "نزل تحديث جديد في نظام النتندو سويتش لا يفوتكم 🎮 🤩", timeG: "10:00 AM"),
-
+        
         Chatss(title: "Telegram",detailsG: "اهلين 😇", timeG: "12:00 AM")
     ]
     

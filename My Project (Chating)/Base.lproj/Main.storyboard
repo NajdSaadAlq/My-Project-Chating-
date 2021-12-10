@@ -204,7 +204,7 @@
                                     <constraint firstItem="LgF-IH-V6l" firstAttribute="top" secondItem="EGI-nO-WWK" secondAttribute="top" constant="59" id="lpY-El-XDc"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-2" translatesAutoresizingMaskIntoConstraints="NO" id="Or5-J8-TvC">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bacegrond" translatesAutoresizingMaskIntoConstraints="NO" id="Or5-J8-TvC">
                                 <rect key="frame" x="0.0" y="108" width="414" height="655"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swift" translatesAutoresizingMaskIntoConstraints="NO" id="5Hm-zr-qum">
@@ -886,7 +886,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image-2" width="1170" height="2532"/>
+        <image name="bacegrond" width="739" height="1600"/>
         <image name="bell.slash.circle.fill" catalog="system" width="128" height="121"/>
         <image name="camera.circle.fill" catalog="system" width="128" height="121"/>
         <image name="ellipsis.circle.fill" catalog="system" width="128" height="121"/>

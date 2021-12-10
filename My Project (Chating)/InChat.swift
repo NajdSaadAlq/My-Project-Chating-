@@ -14,8 +14,7 @@ struct InChat{
     var firstMessag: String
     var SecandMessag: String
     var therdMessag: String
-//mhv,ijb
-    //kbkjbbk
+
 }
 
 

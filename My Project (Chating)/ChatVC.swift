@@ -94,6 +94,7 @@ class ChatVC: UIViewController {
         let chatObject = NSManagedObject.init(entity: chatEntity, insertInto: manageContext)
         chatObject.setValue(chat.title, forKey: "title")
       //  chatObject.setValue(chat.detailsG, forKey: "detailsG")
+        chatObject.setValue(chat.detailsG, forKey: "detailsG")
         if let image = chat.image {
                         //image.pngData()   the two shosess
             let imageData = image.jpegData(compressionQuality: 1)
@@ -158,12 +159,12 @@ func getchats() -> [Chatss] {
         let result = try context.fetch(fetchRequest) as!  [NSManagedObject]
         for manageChat in result {
             let title = manageChat.value(forKey: "title") as! String
-            
+            let detailsG = manageChat.value(forKey: "detailsG") as? String
             var transformValues :UIImage? = nil
             if let imgFromContext = manageChat.value(forKey: "image") as? Data {
                 transformValues = UIImage(data: imgFromContext)
             }
-            let chat = Chatss(title: title , image: transformValues, detailsG: "" , timeG: nil, reactionG: nil)
+            let chat = Chatss(title: title , image: transformValues, detailsG: detailsG , timeG: nil, reactionG: nil)
             chats.append(chat)
         }
             print("========== success =============")

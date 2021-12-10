@@ -51,7 +51,7 @@ class CreateChat: UIViewController {
         NotificationCenter.default.post(name: Notification.Name("NewChhatAdded"), object: nil,userInfo: ["addedChat":chatNew])
             ///
            
-            let alert = UIAlertController(title: "تمت الاضافة", message: "تم إضافة المهمة بنجاح", preferredStyle: .alert)
+            let alert = UIAlertController(title: "تمت الاضافة", message: "تم إضافة جهة الاتصال ", preferredStyle: .alert)
             let closeAction = UIAlertAction(title: "تم", style: .default) { _ in self.tabBarController?.selectedIndex = 0
                 self.titleTextField.text = ""
                 self.detailsTextView.text = ""

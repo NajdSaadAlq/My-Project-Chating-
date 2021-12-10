@@ -44,7 +44,7 @@ class chatDelat_editeVC: UIViewController {
         let chatNew = Chatss(title: ChingTitelTextField.text! , image: chatImageView.image)
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "CurrentChatEdited") , object: nil,userInfo: ["editedChat":chatNew,"editedChatIndex": editedChatIndex! ])
         
-        let alert = UIAlertController(title: "تمت التعديل ", message: "تم تعديل المهمة بنجاح", preferredStyle: .alert)
+        let alert = UIAlertController(title: "تم التعديل ", message: "لقد تم تعديل البيانات", preferredStyle: .alert)
         let closeAction = UIAlertAction(title: "تم", style: .default) { _ in self.navigationController?.popViewController(animated: true)
             self.ChingTitelTextField.text = ""
             self.chatImageView.image = nil
@@ -57,12 +57,12 @@ class chatDelat_editeVC: UIViewController {
     
     @IBAction func deleteButonAct(_ sender: Any) {
         
-        let confirmAlert = UIAlertController(title: "تنبيه", message: "هل أنت متأكد من رغبتك في  إتمام عملية الحذف ", preferredStyle: .alert)
+        let confirmAlert = UIAlertController(title: "تنبيه", message: "هل أنت متأكد من رغبتك في  حذف جهة الاتصال  ", preferredStyle: .alert)
         
         let confirAction = UIAlertAction(title: "تأكيد", style: .destructive) { alert in
             NotificationCenter.default.post(name: Notification.Name(rawValue: "ChatDelet"), object: nil , userInfo: ["deleteChatIndxe" :  self.editedChatIndex! ])
             
-            let alert = UIAlertController(title: "تم", message: "تم حذف المهمه بنجاح", preferredStyle: .alert)
+            let alert = UIAlertController(title: "تم", message: "تم حذف جهة الاتصال", preferredStyle: .alert)
             let closeAction = UIAlertAction(title: "تم", style: .default) { alert in
                 self.navigationController.self?.popToRootViewController(animated: true)
             }

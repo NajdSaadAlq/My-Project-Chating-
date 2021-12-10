@@ -579,7 +579,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ww3-tK-xMN">
                                 <rect key="frame" x="151" y="586" width="113" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Creet"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add"/>
                                 <connections>
                                     <action selector="addBarButtonClicked:" destination="wcE-FD-GDn" eventType="touchUpInside" id="zVo-88-d8C"/>
                                 </connections>
@@ -619,7 +619,7 @@
                                             <constraint firstAttribute="height" constant="34" id="CC9-ea-tvm"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" spellCheckingType="yes" returnKeyType="done" textContentType="name"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="yes" returnKeyType="done" smartDashesType="yes" smartInsertDeleteType="yes" smartQuotesType="yes" textContentType="name"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="👋🏽  Welcome Message" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qTv-Iy-wO5">
                                         <rect key="frame" x="72" y="287" width="167" height="34"/>
@@ -821,9 +821,9 @@
                                 <rect key="frame" x="0.0" y="540" width="414" height="238"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3E-D5-0uU">
-                                        <rect key="frame" x="235" y="46" width="139" height="32"/>
+                                        <rect key="frame" x="235" y="40" width="139" height="38"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="32" id="Kkm-RT-HDk"/>
+                                            <constraint firstAttribute="height" constant="38" id="Kkm-RT-HDk"/>
                                             <constraint firstAttribute="width" constant="139" id="wx0-cA-muC"/>
                                         </constraints>
                                         <color key="tintColor" systemColor="systemRedColor"/>
@@ -834,10 +834,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoB-PB-Bou">
-                                        <rect key="frame" x="53" y="45" width="148" height="33"/>
+                                        <rect key="frame" x="51" y="40" width="150" height="38"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="33" id="i5c-Tt-O8M"/>
-                                            <constraint firstAttribute="width" constant="148" id="wnK-SL-jsz"/>
+                                            <constraint firstAttribute="height" constant="38" id="i5c-Tt-O8M"/>
+                                            <constraint firstAttribute="width" constant="150" id="wnK-SL-jsz"/>
                                         </constraints>
                                         <color key="tintColor" systemColor="tintColor"/>
                                         <state key="normal" title="Button"/>
@@ -850,9 +850,9 @@
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottomMargin" secondItem="x3E-D5-0uU" secondAttribute="bottom" constant="152" id="Dro-VJ-UaX"/>
-                                    <constraint firstItem="SoB-PB-Bou" firstAttribute="top" secondItem="HKp-x0-tya" secondAttribute="topMargin" constant="37" id="IBn-Ch-EiN"/>
-                                    <constraint firstItem="SoB-PB-Bou" firstAttribute="leading" secondItem="HKp-x0-tya" secondAttribute="leadingMargin" constant="45" id="NvV-rG-9m6"/>
-                                    <constraint firstItem="x3E-D5-0uU" firstAttribute="top" secondItem="HKp-x0-tya" secondAttribute="topMargin" constant="38" id="VTd-P1-qjD"/>
+                                    <constraint firstItem="SoB-PB-Bou" firstAttribute="top" secondItem="HKp-x0-tya" secondAttribute="topMargin" constant="32" id="IBn-Ch-EiN"/>
+                                    <constraint firstItem="SoB-PB-Bou" firstAttribute="leading" secondItem="HKp-x0-tya" secondAttribute="leadingMargin" constant="43" id="NvV-rG-9m6"/>
+                                    <constraint firstItem="x3E-D5-0uU" firstAttribute="top" secondItem="HKp-x0-tya" secondAttribute="topMargin" constant="32" id="VTd-P1-qjD"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="x3E-D5-0uU" secondAttribute="trailing" constant="32" id="Yek-Bw-u2x"/>
                                     <constraint firstAttribute="height" constant="238" id="d1e-xD-m0K"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="SoB-PB-Bou" secondAttribute="bottom" constant="152" id="deQ-HS-kzK"/>

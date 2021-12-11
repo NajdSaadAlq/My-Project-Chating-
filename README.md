@@ -14,6 +14,11 @@
   - Shows the chat page between you " I added the MessageKit library to provide me the full chat features " (under development 🔨 )
   - There is a contact information page, from which you can edit or delete the contact's data
   - The system page contains my private data and information (under development 🔨 )
+
+
+  ## Library Used:
+  - [MessageKit](https://github.com/MessageKit/MessageKit.git)
+  - [CleanyModal](https://github.com/loryhuz/CleanyModal.git)
   
   ## DEMO
 

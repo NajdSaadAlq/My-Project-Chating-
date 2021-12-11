@@ -16,6 +16,15 @@
   - The system page contains my private data and information (under development 🔨 )
   
   ## DEMO
-  
-  
 
+https://user-images.githubusercontent.com/95840073/145664763-6f74a95f-523b-492b-a45a-73915d6efc4b.mp4
+
+
+## 
+
+## Screenshots
+
+- Mine screen
+<img width="400" alt="Screen Shot 2021-12-11 at 5 38 08 AM" src="https://user-images.githubusercontent.com/95840073/145664840-b83f5a29-eda2-47a0-991a-9f816495c01a.png">
+
+ -- nn

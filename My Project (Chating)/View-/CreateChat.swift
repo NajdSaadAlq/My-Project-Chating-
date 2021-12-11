@@ -53,14 +53,21 @@ class CreateChat: UIViewController {
         NotificationCenter.default.post(name: Notification.Name("NewChhatAdded"), object: nil,userInfo: ["addedChat":chatNew])
             ///
            
-            let alert = UIAlertController(title: "تمت الاضافة", message: "تم إضافة جهة الاتصال ", preferredStyle: .alert)
-            let closeAction = UIAlertAction(title: "تم", style: .default) { _ in self.tabBarController?.selectedIndex = 0
+           
+        let alert = MyAlertViewController(
+            title: "تمت الاضافة",
+            message: "تم إضافة جهة الاتصال ",
+            imageName: ("Image-6")  )
+        
+        
+        alert.addAction( title: "تم", style: .default) { _ in self.tabBarController?.selectedIndex = 0
                 self.titleTextField.text = ""
                 self.mobileTextField.text = ""
                 self.detailsTextView.text = ""
                 self.imageChat.image = nil
+            
             }
-            alert.addAction(closeAction)
+            
             present(alert, animated: true, completion: {})
             
         }

@@ -10,12 +10,8 @@ import UIKit
 
 class ChatVC: UIViewController{
    
-    var chatAarray:[Chatss] = [
-
-    ]
-    
-    
-    
+    var chatAarray:[Chatss] = []
+  
     @IBOutlet weak var chatTableView: UITableView!
     
     

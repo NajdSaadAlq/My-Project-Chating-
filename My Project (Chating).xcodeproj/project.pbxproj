@@ -14,6 +14,7 @@
 		A81C7FDA275D54190009700D /* EditeChatInf.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81C7FD9275D54190009700D /* EditeChatInf.swift */; };
 		A839786E275CF27D0018C4AC /* CreateChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A839786D275CF27D0018C4AC /* CreateChat.swift */; };
 		A854C8B6276425DB003A1305 /* ChatStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A854C8B5276425DB003A1305 /* ChatStorage.swift */; };
+		A854C8B82764286C003A1305 /* MyAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A854C8B72764286C003A1305 /* MyAlertViewController.swift */; };
 		A863EC77275C7FE200C9479F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A863EC76275C7FE200C9479F /* AppDelegate.swift */; };
 		A863EC79275C7FE200C9479F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A863EC78275C7FE200C9479F /* SceneDelegate.swift */; };
 		A863EC7E275C7FE200C9479F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A863EC7C275C7FE200C9479F /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 		A81C7FD9275D54190009700D /* EditeChatInf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditeChatInf.swift; sourceTree = "<group>"; };
 		A839786D275CF27D0018C4AC /* CreateChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChat.swift; sourceTree = "<group>"; };
 		A854C8B5276425DB003A1305 /* ChatStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStorage.swift; sourceTree = "<group>"; };
+		A854C8B72764286C003A1305 /* MyAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAlertViewController.swift; sourceTree = "<group>"; };
 		A863EC73275C7FE200C9479F /* My Project (Chating).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Project (Chating).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A863EC76275C7FE200C9479F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A863EC78275C7FE200C9479F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				A81C7FD9275D54190009700D /* EditeChatInf.swift */,
 				A839786D275CF27D0018C4AC /* CreateChat.swift */,
 				A863EC81275C7FE300C9479F /* LaunchScreen.storyboard */,
+				A854C8B72764286C003A1305 /* MyAlertViewController.swift */,
 			);
 			path = "View-";
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				A863EC79275C7FE200C9479F /* SceneDelegate.swift in Sources */,
 				A805AA8C275D9F740031AD83 /* ChatDataleVC.swift in Sources */,
 				A854C8B6276425DB003A1305 /* ChatStorage.swift in Sources */,
+				A854C8B82764286C003A1305 /* MyAlertViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

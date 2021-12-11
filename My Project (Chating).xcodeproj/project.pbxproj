@@ -13,6 +13,7 @@
 		A80D210E276042CA00733860 /* chatDelat&editeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D210D276042CA00733860 /* chatDelat&editeVC.swift */; };
 		A81C7FDA275D54190009700D /* EditeChatInf.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81C7FD9275D54190009700D /* EditeChatInf.swift */; };
 		A839786E275CF27D0018C4AC /* CreateChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A839786D275CF27D0018C4AC /* CreateChat.swift */; };
+		A854C8B6276425DB003A1305 /* ChatStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A854C8B5276425DB003A1305 /* ChatStorage.swift */; };
 		A863EC77275C7FE200C9479F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A863EC76275C7FE200C9479F /* AppDelegate.swift */; };
 		A863EC79275C7FE200C9479F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A863EC78275C7FE200C9479F /* SceneDelegate.swift */; };
 		A863EC7E275C7FE200C9479F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A863EC7C275C7FE200C9479F /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		A80D210D276042CA00733860 /* chatDelat&editeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "chatDelat&editeVC.swift"; sourceTree = "<group>"; };
 		A81C7FD9275D54190009700D /* EditeChatInf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditeChatInf.swift; sourceTree = "<group>"; };
 		A839786D275CF27D0018C4AC /* CreateChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChat.swift; sourceTree = "<group>"; };
+		A854C8B5276425DB003A1305 /* ChatStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStorage.swift; sourceTree = "<group>"; };
 		A863EC73275C7FE200C9479F /* My Project (Chating).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Project (Chating).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A863EC76275C7FE200C9479F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A863EC78275C7FE200C9479F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,8 +76,50 @@
 				FD67353D2C47038D5BEB975F /* Pods-My Project (Chating).debug.xcconfig */,
 				A226680F761CA9BF4F9E56CF /* Pods-My Project (Chating).release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A854C8B12764249B003A1305 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A863EC8A275C81D100C9479F /* ChatVC.swift */,
+				A805AA8B275D9F740031AD83 /* ChatDataleVC.swift */,
+				A80D210D276042CA00733860 /* chatDelat&editeVC.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		A854C8B22764251E003A1305 /* Modelss */ = {
+			isa = PBXGroup;
+			children = (
+				A805AA87275D7D080031AD83 /* InChat.swift */,
+				A863EC8E275C98A000C9479F /* Chatss.swift */,
+			);
+			path = Modelss;
+			sourceTree = "<group>";
+		};
+		A854C8B327642576003A1305 /* View- */ = {
+			isa = PBXGroup;
+			children = (
+				A863EC7C275C7FE200C9479F /* Main.storyboard */,
+				A863EC8C275C948300C9479F /* ChatCell.swift */,
+				A81C7FD9275D54190009700D /* EditeChatInf.swift */,
+				A839786D275CF27D0018C4AC /* CreateChat.swift */,
+				A863EC81275C7FE300C9479F /* LaunchScreen.storyboard */,
+			);
+			path = "View-";
+			sourceTree = "<group>";
+		};
+		A854C8B4276425B1003A1305 /* Storag */ = {
+			isa = PBXGroup;
+			children = (
+				A854C8B5276425DB003A1305 /* ChatStorage.swift */,
+				A863EC76275C7FE200C9479F /* AppDelegate.swift */,
+				A863EC78275C7FE200C9479F /* SceneDelegate.swift */,
+				A89BAC182761634200192405 /* ChatData.xcdatamodeld */,
+				A8BA14E52763DF3B00A72739 /* ChatDataMin.xcdatamodeld */,
+			);
+			path = Storag;
 			sourceTree = "<group>";
 		};
 		A863EC6A275C7FE200C9479F = {
@@ -99,22 +143,12 @@
 		A863EC75275C7FE200C9479F /* My Project (Chating) */ = {
 			isa = PBXGroup;
 			children = (
-				A863EC76275C7FE200C9479F /* AppDelegate.swift */,
-				A863EC78275C7FE200C9479F /* SceneDelegate.swift */,
-				A863EC7C275C7FE200C9479F /* Main.storyboard */,
-				A80D210D276042CA00733860 /* chatDelat&editeVC.swift */,
-				A863EC8C275C948300C9479F /* ChatCell.swift */,
-				A863EC8A275C81D100C9479F /* ChatVC.swift */,
-				A805AA8B275D9F740031AD83 /* ChatDataleVC.swift */,
-				A81C7FD9275D54190009700D /* EditeChatInf.swift */,
-				A839786D275CF27D0018C4AC /* CreateChat.swift */,
-				A863EC8E275C98A000C9479F /* Chatss.swift */,
-				A805AA87275D7D080031AD83 /* InChat.swift */,
+				A854C8B4276425B1003A1305 /* Storag */,
+				A854C8B327642576003A1305 /* View- */,
+				A854C8B22764251E003A1305 /* Modelss */,
+				A854C8B12764249B003A1305 /* View Controller */,
 				A863EC7F275C7FE300C9479F /* Assets.xcassets */,
-				A863EC81275C7FE300C9479F /* LaunchScreen.storyboard */,
 				A863EC84275C7FE300C9479F /* Info.plist */,
-				A89BAC182761634200192405 /* ChatData.xcdatamodeld */,
-				A8BA14E52763DF3B00A72739 /* ChatDataMin.xcdatamodeld */,
 			);
 			path = "My Project (Chating)";
 			sourceTree = "<group>";
@@ -246,6 +280,7 @@
 				A89BAC1A2761634200192405 /* ChatData.xcdatamodeld in Sources */,
 				A863EC79275C7FE200C9479F /* SceneDelegate.swift in Sources */,
 				A805AA8C275D9F740031AD83 /* ChatDataleVC.swift in Sources */,
+				A854C8B6276425DB003A1305 /* ChatStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,7 +12,7 @@ struct InChat{
     
     var image: UIImage? = nil
     var firstMessag: String
-    var SecandMessag: String
+    var secandMessag: String
     var therdMessag: String
 
 }
